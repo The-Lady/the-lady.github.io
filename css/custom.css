@@ -1,0 +1,91 @@
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*============================*/
+/*=======HEADER SECTION=======*/
+/*============================*/
+header {
+    background-image: url("http://cdn.paper4pc.com/images/polygon-starry-shape-wallpaper-1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+/*      Navigation Bar       */
+.navbar-default{
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.navbar-collapse li{
+    border-bottom: 0.5px solid rgba(134, 134, 134, 0.32);
+}
+
+.navbar-collapse a {
+    text-align: right;
+    margin-right: 10px;
+    border-bottom: 2px solid transparent;
+    transition:0.3s;    
+}
+.navbar-collapse a:hover{
+    border-bottom: 2px solid transparent;
+}
+/*          Introduction       */
+.intro {
+    padding: 2%;
+    color: #fff;
+    font-size: 180%;
+    text-align: justify;
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translate(0,-50%); 
+    width:100%;
+}
+.intro span{
+    display: inline-block;
+    font-size: 260%;
+    text-align: center;
+    width: 100% ;
+}
+
+
+/*====================================*/
+/*===============PROJECTS=============*/
+/*====================================*/
+#projects{
+    
+}
+figcaption{
+    text-align: center;
+    font-size: 110%;
+    font-weight: 600;
+}
+
+.row figure{
+    margin-top:1%;
+    margin-bottom:2%;
+    box-shadow: 2px 4px 6px 0 #575757,-2px 0px 4px 0 #575757;
+    transition: box-shadow 0.3s ;
+}
+.row figure:hover{
+    box-shadow: 2px 4px 18px 0 #575757,-2px 0px 12px 0 #575757;
+}
+
+
+
+@media only screen and (min-width:768px){
+    .intro{
+         width:50%;
+    }
+    .intro span{
+        text-align: right;
+    }
+    .navbar-collapse a:hover{
+        border-bottom: 2px solid #fd8b29;
+    }
+    .navbar-collapse li{
+        border-bottom: 0.5px solid transparent;
+    }
+}
